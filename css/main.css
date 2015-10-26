@@ -1,0 +1,277 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* bootstrap 3 helpers */
+
+body {
+  padding-bottom: 20px;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-form input,
+.form-inline input {
+  width: auto;
+}
+
+#page-header {
+  background: transparent url("/img/header-bg.png") repeat-x scroll 0% 0%;
+  background-size: cover;
+  height: 181px;
+  padding: 40px;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  background: transparent url("/img/logo--big.png") no-repeat scroll 0% 0%;
+  width: 458px;
+  height: 71px;
+  display: block;
+}
+.container_reminder{
+  color:#687b8f;
+  font-weight:400;
+  font-size:14px;
+}
+.punchline {
+  color: #fff;
+}
+
+.punchline span {
+  color: #e3e00c;
+}
+
+#page-header .social {
+  text-align: right;
+}
+
+#page-header .social a {
+  width: 30px;
+  height: 22px;
+  margin: 0px 10px 10px 0px;
+  display: inline-block;
+}
+
+#page-header .social .social__fb {
+  background: transparent url("/img/facebook.png") no-repeat scroll 0% 0%;
+}
+
+#page-header .social .social__tw {
+  background: transparent url("/img/twitter.png") no-repeat scroll 0% 0%;
+}
+
+#page-header .social .social__yt {
+  background: transparent url("/img/youtube.png") no-repeat scroll 0% 0%;
+}
+
+.site-desc {}
+
+.header__links,
+.header__links a {
+  color: #fff;
+  text-align: right;
+}
+
+.social {}
+
+ul {}
+
+li {}
+
+.navbar {}
+
+.navbar-default {}
+
+.navbar-static {}
+
+.navbar-header {}
+
+.navbar-toggle {}
+
+.ghost-input {
+  border: 0px;
+  background: transparent;
+  box-shadow: none;
+  width: 100px!important;
+}
+
+.h--reminder {
+  color: #972121;
+}
+
+h2 {
+  font-size: 15px;
+  color: #255a93;
+  font-weight: 600;
+}
+
+h2 .h--reminder {
+  color: #972121;
+}
+
+h3 {
+  color: #255a93;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.page-sidebar h5 {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-align: right;
+}
+.page-sidebar section{
+  margin-bottom:40px;
+}
+.newsletter-container form {
+  padding: 30px 20px 50px;
+  border: 1px solid #e3e3e3;
+  width: 300px;
+  position: relative;
+}
+
+.newsletter-container form p {
+  color: #7e8e9f;
+  font-size: 14px;
+}
+
+.newsletter-container form legend {
+  border: medium none;
+  color: #255A93;
+  font-size: 19px;
+  background: #FFF;
+  top: -15px;
+  position: absolute;
+  width: auto;
+  padding: 0px 10px;
+}
+
+.newsletter-container form legend span {
+  color: #9fb7d0;
+}
+
+.newsletter-container form input[type=submit]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.see-all-link {
+  font-size: 12px;
+  color: #cfcfcf;
+  float: right;
+  margin-top: -20px;
+}
+
+.see-all-link--inline {
+    font-size: 12px;
+    color: #cfcfcf;
+    display: block;
+    margin: 20px 20px 10px 0px;
+    /* float: right; */
+    /* margin-top: -20px; */
+    text-align: right;
+}
+
+.nav-tabs {}
+
+.tab-content {
+  padding: 15px;
+  background: #ebf0f5;
+}
+.product-slider{
+      border-bottom: 1px solid #d6e0eb;
+    padding-top: 15px;
+    border-top: 1px solid #d6e0eb;
+}
+.tab-pane {}
+.ad-ph{
+  width:300px;
+  height:250px;
+  background:#ebf0f5;
+}
+.article__author {
+  color: #8ca8c6;
+  font-size: 12px
+}
+
+.article__title {
+  color: #255a93;
+  font-size: 16px;
+  margin: 5px 0px 5px;
+}
+
+.article__intro {
+  color: #687b8f;
+  font-size: 12px;
+}
+
+.video__category {
+  font-size: 12px;
+  color: #cfcfcf;
+  padding-left: 15px;
+}
+
+.video__title {
+  color: #255a93;
+  font-size: 16px;
+  margin: 5px 0px 5px;
+  padding-left: 15px;
+}
+
+.video__intro {
+  color: #687b8f;
+  font-size: 12px;
+  padding-left: 15px;
+}
+.product_desc{
+  color:#9ba7b5;
+}
+.product_name{
+  color:#255a93;
+  font-size:13px;
+}
+footer {
+  background: #EBF0F5;
+}
+
+footer h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #255a93;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li a {
+  color: 537fad;
+  font-size: 14px;
+}
+
+.mag-link {
+  position: relative;
+height: 568px;
+display: block;
+}
+
+.mag-place {
+  position: absolute;
+  bottom: 35px;
+  left: -31px;
+}
+.mobile-footer{
+	background:#255a93
+}

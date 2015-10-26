@@ -1,0 +1,279 @@
+/**
+ * PgwSlider - Version 2.3
+ *
+ * Copyright 2014, Jonathan M. Piat
+ * http://pgwjs.com - http://pagawa.com
+ *
+ * Released under the GNU GPLv3 license - http://opensource.org/licenses/gpl-3.0
+ */
+.pgwSlider {
+    width: 100%;
+    color: #fff;
+}
+
+.pgwSlider a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pgwSlider .ps-current {
+    float: left;
+    width: 74%;
+    overflow: hidden;
+    height: inherit;
+    position: relative;
+    font-size: 1rem;
+}
+
+.pgwSlider.listOnTheLeft .ps-current {
+    float: right;
+}
+
+.pgwSlider .ps-current ul {
+    width: 100%;
+}
+
+.pgwSlider .ps-current li {
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    background: -moz-linear-gradient(90deg, #05274c 0%, #008080 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008080), color-stop(100%, #05274c)); /* safari4+,chrome */
+background: -webkit-linear-gradient(90deg, #05274c 0%, #008080 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(90deg, #05274c 0%, #008080 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(90deg, #05274c 0%, #008080 100%); /* ie10+ */
+background: linear-gradient(0deg, #05274c 0%, #008080 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#05274c',GradientType=0 ); /* ie6-9 */
+}
+
+.pgwSlider .ps-current img {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    display: block;
+    transition: margin-top 250ms linear;
+
+}
+
+.pgwSlider .ps-caption {
+    position: absolute;
+     
+  
+    width: auto;
+    padding: 12px;
+    background:#972121;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    left: 40px;
+    bottom:100px;
+    display: none;
+    z-index: 3;
+  font-weight:600;
+  font-size:18px;
+}
+.pgwSlider .ps-caption-desc {
+    position: absolute;
+     
+  
+    width: auto;
+    padding: 0px;
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    left: 40px;
+    bottom:30px;
+    display: none;
+    z-index: 3;
+  font-weight:600;
+  font-size:24px;
+}
+
+ul.pgwSlider,
+.pgwSlider  ul {
+    float: right;
+    width: 25%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.pgwSlider  .ps-list {
+    padding: 0 0 0 7px ;
+
+}
+
+ul.pgwSlider.listOnTheLeft,
+.pgwSlider.listOnTheLeft > ul {
+    float: left;
+}
+
+ul.pgwSlider > li,
+.pgwSlider > .ps-list > li {
+    height: 50px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 0.8rem;
+  border-bottom:1px solid #e7e7e7;
+    transition: opacity 200ms linear;
+}
+
+ul.pgwSlider > li:last-child,
+.pgwSlider > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+ul.pgwSlider > li span,
+.pgwSlider > .ps-list > li span {
+    display:inline;
+    width: auto;
+    position: absolute;
+    top: 0;
+    padding: 5px 7px;
+    background: #255a93;
+   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+ul.pgwSlider > li h3, .pgwSlider > .ps-list > li h3 {
+    /* display: inline; */
+    /* width: auto; */
+    /* position: absolute; */
+   
+    padding: 7px 0px; 
+    background: transparent;
+    color: #255a93;
+    font-size: 14px;
+ 
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    white-space: normal;
+  
+}
+ul.pgwSlider > li p, .pgwSlider > .ps-list > li p {
+    /* display: inline; */
+    /* width: auto; */
+    /* position: absolute; */
+    bottom: 0;
+    /* padding: 5px 7px; */
+    background: transparent;
+    color: #687b8f;
+    font-size: 12px;
+ 
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    white-space: normal;
+}
+
+ul.pgwSlider > li:hover,
+.pgwSlider > ul > li:hover {
+    opacity: 1 !important;
+}
+
+ul.pgwSlider > li img,
+.pgwSlider > ul > li img {
+  position: absolute;
+  right:0;
+    width: 119px;
+    min-height: 79px;
+    display: block;
+    transition: margin-top 250ms linear;
+}
+
+.pgwSlider .ps-prevIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    display: block;
+}
+
+.pgwSlider .ps-nextIcon {
+    border-color:transparent #fff transparent;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    display: block;
+}
+
+.pgwSlider .ps-current .ps-prev {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    padding: 20px 20px 20px 17px;
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+.pgwSlider .ps-current .ps-next {
+    background: rgba(0, 0, 0, 0.5);
+    filter:  progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#99000000', endColorstr='#99000000')";
+    border: 1px solid #777;
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    padding: 20px 17px 20px 20px;
+    right: 0;
+    top: 45%;
+    cursor: pointer;
+}
+
+/*
+ * The media-queries are not used because IE8 doesn't support them.
+ */
+ul.pgwSlider.wide > li,
+.pgwSlider.wide > ul > li {
+    width: 100% !important;
+}
+
+.pgwSlider.narrow .ps-current {
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+}
+
+.pgwSlider.narrow .ps-current img {
+    width: 100%;
+    min-height: inherit;
+}
+
+.pgwSlider.narrow .ps-current,
+ul.pgwSlider.narrow,
+.pgwSlider.narrow > ul {
+    width: 100%;
+}
+
+ul.pgwSlider.narrow > li,
+.pgwSlider.narrow > .ps-list > li {
+    float: left;
+    min-height: 50px;
+    max-height: 70px;
+    min-width: 15%;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+ul.pgwSlider.narrow.listOnTheLeft > li,
+.pgwSlider.narrow.listOnTheLeft > ul > li {
+    float: right;
+}
+
+.pgwSlider.narrow .ps-caption {
+    padding: 8px;
+}
+
+.pgwSlider.narrow .ps-current .ps-prev {
+    padding: 15px 15px 15px 12px;
+    top: 40%;
+}
+
+.pgwSlider.narrow .ps-current .ps-next {
+    padding: 15px 12px 15px 15px;
+    top: 40%;
+}
